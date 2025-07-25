@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.local/kitty.app/bin:$PATH"
+export TERMINAL="$HOME/.local/kitty.app/bin/kitty"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -130,5 +132,5 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-alias nvim="~/.nvim-linux64/bin/nvim"
 alias s="kitty +kitten ssh"
+alias icat="kitty +kitten icat"
